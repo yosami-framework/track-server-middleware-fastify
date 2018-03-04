@@ -1,0 +1,25 @@
+{
+  "name": "track-server-middleware-fastify",
+  "version": "0.0.1",
+  "description": "fastify for track server.",
+  "main": "lib/index.js",
+  "repository": "alfa-jpn/track-server-middleware-fastify.git",
+  "scripts": {
+    "linter": "eslint ./",
+    "test": "ospec"
+  },
+  "author": "alfa-jpn",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^1.0.0-rc.3",
+    "fastify-static": "^0.8.0",
+    "track-server": "0.0.1"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "eslint": "^4.17.0",
+    "eslint-config-google": "^0.9.1",
+    "track-controller": "0.0.9",
+    "track-spec": "0.0.2"
+  }
+}
