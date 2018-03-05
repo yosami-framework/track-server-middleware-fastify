@@ -1,6 +1,6 @@
 {
   "name": "track-server-middleware-fastify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "fastify for track server.",
   "main": "lib/index.js",
   "repository": "alfa-jpn/track-server-middleware-fastify.git",
@@ -13,7 +13,7 @@
   "dependencies": {
     "fastify": "^1.0.0-rc.3",
     "fastify-static": "^0.8.0",
-    "track-server": "0.0.1"
+    "track-server": "0.0.2"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
