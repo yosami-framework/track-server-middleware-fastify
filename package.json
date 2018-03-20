@@ -1,6 +1,6 @@
 {
   "name": "track-server-middleware-fastify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "fastify for track server.",
   "main": "lib/index.js",
   "repository": "alfa-jpn/track-server-middleware-fastify.git",
@@ -12,14 +12,27 @@
   "license": "ISC",
   "dependencies": {
     "fastify": "^1.0.0-rc.3",
-    "fastify-static": "^0.8.0",
-    "track-server": "0.0.2"
+    "fastify-static": "^0.8.0"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
     "eslint": "^4.17.0",
     "eslint-config-google": "^0.9.1",
-    "track-controller": "0.0.9",
-    "track-spec": "0.0.2"
+    "mithril": "^1.1.6",
+    "track-component": "0.0.7",
+    "track-config": "0.0.3",
+    "track-controller": "0.0.10",
+    "track-dsl": "0.0.3",
+    "track-eventor": "0.0.5",
+    "track-helpers": "0.0.1",
+    "track-i18n": "0.0.2",
+    "track-model": "0.0.5",
+    "track-server": "0.0.3",
+    "track-server-renderer": "0.0.5",
+    "track-spec": "0.0.3",
+    "track-view": "0.0.4"
+  },
+  "peerDependencies": {
+    "track-server": "0.0.x"
   }
 }

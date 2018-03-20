@@ -50,7 +50,7 @@ t.describe('TrackServerRenderer', () => {
           'X-SERVER-URL':    'https://localhost/?hoge=fuga&foo=bar',
           'X-SERVER-ASSETS': {
             js:  '/assets/mock.js?720e86eb7e65b9e335363d9831524168',
-            css: '/assets/mock.css?d67eb08e3d122fdd4d7054dd6d25fb33',
+            css: '/assets/mock.css?b2cb70ce724181d2962965d40c05b1df',
           },
         });
       });
