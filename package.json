@@ -1,9 +1,9 @@
 {
   "name": "track-server-middleware-fastify",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "fastify for track server.",
   "main": "lib/index.js",
-  "repository": "alfa-jpn/track-server-middleware-fastify.git",
+  "repository": "yosami-framework/track-server-middleware-fastify.git",
   "scripts": {
     "linter": "eslint ./",
     "test": "ospec"

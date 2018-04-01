@@ -1,6 +1,8 @@
 # TrackServerMiddlewareFastify
 fastify for track-server.
 
+[![Build Status](https://travis-ci.org/yosami-framework/track-server-middleware-fastify.svg?branch=master)](https://travis-ci.org/yosami-framework/track-server-middleware-fastify)
+
 ## Installation
 
 ### npm
