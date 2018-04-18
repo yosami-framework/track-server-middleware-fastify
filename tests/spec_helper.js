@@ -9,4 +9,5 @@ Config.configure((c) => {
 
 TrackConfig.configure((c) => {
   c.loader = ((module) => require(`./fixtures/${module}`));
+  c.localeSelector = (() => null);
 });

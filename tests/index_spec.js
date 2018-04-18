@@ -15,7 +15,7 @@ t.describe('TrackServerRenderer', () => {
     middleware = new TrackServerMiddlewareFastify();
 
     const publicDir = path.resolve(__dirname, 'fixtures');
-    asset = new Asset(publicDir, 'assets/mock.js', 'assets/mock.css');
+    asset = new Asset(publicDir, '/assets/mock.js', '/assets/mock.css');
 
     middleware.register('/', new TrackServerRenderer(MockController, asset));
     middleware.register('/broken', new TrackServerRenderer(BrokenController, asset));
@@ -46,12 +46,9 @@ t.describe('TrackServerRenderer', () => {
       return subject().then((response) => {
         const dom = Cheerio.load(response.payload);
         t.expect(JSON.parse(dom('#attrs').text())).deepEquals({
+          'X-SERVER-ASSETS': {js: '/assets/mock.js', css: '/assets/mock.css'},
           'X-SERVER-PARAMS': {hoge: 'fuga', foo: 'bar'},
           'X-SERVER-URL':    'https://localhost/?hoge=fuga&foo=bar',
-          'X-SERVER-ASSETS': {
-            js:  '/assets/mock.js?720e86eb7e65b9e335363d9831524168',
-            css: '/assets/mock.css?b2cb70ce724181d2962965d40c05b1df',
-          },
         });
       });
     });
